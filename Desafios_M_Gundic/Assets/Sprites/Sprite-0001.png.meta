@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d7560c05d758d6f4eadfd220f526c654
+guid: f56a802b97d480149ae0738c3435b52c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
@@ -97,67 +97,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Heart_0
+      name: Default_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 21
-        height: 18
+        width: 196
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b2edf4917697b7b4fa10ba62f8a5bc15
-      internalID: -405126700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart_1
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 0
-        width: 21
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec1ac50e1b358794eb84f38f8f8e3413
-      internalID: 505083033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Heart_2
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 0
-        width: 21
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7860451ac5480944986dce7c70a52fa
-      internalID: 737371997
+      spriteID: 80e2103ad45251c30800000000000000
+      internalID: 4329407632164072968
       vertices: []
       indices: 
       edges: []
@@ -176,9 +132,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Heart_0: -405126700
-      Heart_1: 505083033
-      Heart_2: 737371997
+      Default_0: 4329407632164072968
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
