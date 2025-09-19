@@ -24,6 +24,6 @@ public class Jugador : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Meta")) { return; }
 
-        Debug.Log("GANASTE");
+        Debug.Log("Ganaste Esta Ronda!!!");
     }
 }
