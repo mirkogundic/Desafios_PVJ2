@@ -230,6 +230,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 5
+  OnVidaCambiada:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!82 &232490236855630118
 AudioSource:
   m_ObjectHideFlags: 0

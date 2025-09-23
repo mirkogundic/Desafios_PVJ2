@@ -6,7 +6,7 @@ public class Curar : MonoBehaviour
 {
     // Variables a configurar desde el editor
     [Header("Configuracion")]
-    [SerializeField] float puntos = 1f;
+    [SerializeField] int puntos = 1;
 
     private void OnParticleCollision(GameObject other)
     {
