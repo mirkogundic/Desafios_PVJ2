@@ -6,6 +6,7 @@ public class MainUIController : MonoBehaviour
 {
     public void CargarSiguienteEscena()
     {
-        SceneManager.LoadScene("Nivel1");
+        int indiceEscenaActual = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(indiceEscenaActual +1);
     }
 }

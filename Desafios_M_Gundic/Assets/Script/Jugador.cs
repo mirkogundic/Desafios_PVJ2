@@ -9,6 +9,7 @@ public class Jugador : MonoBehaviour
     [Header("Configuracion")]
     [SerializeField] public float vida = 5f;
     [SerializeField] private UnityEvent<string> OnTextChange;
+    [SerializeField] private UnityEvent EsceneChange;
 
     private void Start()
     {
@@ -33,5 +34,17 @@ public class Jugador : MonoBehaviour
         if (!collision.gameObject.CompareTag("Meta")) { return; }
 
         Debug.Log("Ganaste Esta Ronda!!!");
+    }
+
+    public void Update()
+    {
+        if (vida <= 0 || Input.GetKeyDown(KeyCode.R))
+            { 
+            
+            EsceneChange.Invoke();
+
+        }
+
+
     }
 }

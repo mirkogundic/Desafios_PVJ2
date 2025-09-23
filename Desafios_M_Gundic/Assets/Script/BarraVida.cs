@@ -14,7 +14,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
         vidaMaxima = playerController.vida;
     }
 
-    // Update is called once per frame
     void Update()
     {
         rellenoBarraVida.fillAmount = playerController.vida / vidaMaxima;

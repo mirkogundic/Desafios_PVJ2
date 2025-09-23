@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4dab7ef95e4a1245bb83e7fb3fedebb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntos: 5
+  puntos: 1
 --- !u!1 &243168221
 GameObject:
   m_ObjectHideFlags: 0
@@ -17431,6 +17431,7 @@ GameObject:
   - component: {fileID: 769815877}
   - component: {fileID: 769815876}
   - component: {fileID: 769815875}
+  - component: {fileID: 769815878}
   m_Layer: 0
   m_Name: Papiro
   m_TagString: Meta
@@ -17576,6 +17577,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &769815878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769815873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecec2f958cd83dd40885b640ae1cd8b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EscenaSiguiente: Nivel2
 --- !u!1 &851075796
 GameObject:
   m_ObjectHideFlags: 0
@@ -26702,6 +26716,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: EsceneChange.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
       propertyPath: OnTextChange.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -26709,6 +26727,14 @@ PrefabInstance:
       propertyPath: OnVidaCambiada.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: EsceneChange.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: EsceneChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 769815878}
     - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
       propertyPath: OnTextChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -26718,8 +26744,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1429865290}
     - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: EsceneChange.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
       propertyPath: OnTextChange.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: EsceneChange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetEscena
       objectReference: {fileID: 0}
     - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
       propertyPath: OnTextChange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -26734,12 +26768,20 @@ PrefabInstance:
       value: UpdateLives
       objectReference: {fileID: 0}
     - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: EsceneChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NextEscene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
       propertyPath: OnTextChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: HUDController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
       propertyPath: OnVidaCambiada.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: HUDController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: EsceneChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
       propertyPath: OnTextChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

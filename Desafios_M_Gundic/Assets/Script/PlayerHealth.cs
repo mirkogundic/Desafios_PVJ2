@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField]
-    private int lives = 3;
+    private int lives = 5;
 
     public UnityEvent<int> OnLivesChanged;
 
@@ -15,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (lives <= 0)
         {
-            // Aquí puedes manejar la situación de Game Over
+            //Usar en caso de Game over
         }
     }
 }
