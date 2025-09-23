@@ -46,5 +46,8 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: HUB
+    uniqueID: 2476804205
+    locked: 0
   m_RenderingLayers:
   - Default
