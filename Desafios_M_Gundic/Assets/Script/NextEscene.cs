@@ -5,7 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 public class NextEscene : MonoBehaviour
 {
-    [SerializeField] public string EscenaSiguiente;
+    [SerializeField] private UnityEvent EscenaSiguiente;
     private int indiceEscenaActual;
 
     public void Start()
@@ -17,7 +17,7 @@ public class NextEscene : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene(EscenaSiguiente);
+            EscenaSiguiente.Invoke();
         }
     }
 
