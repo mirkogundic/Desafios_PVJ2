@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Keys
   - Meta
+  - Coleccionable
   layers:
   - Default
   - TransparentFX

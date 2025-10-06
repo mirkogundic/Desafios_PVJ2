@@ -4,18 +4,19 @@ using System.Collections.Generic;
 
 public class EfectodeSonido : MonoBehaviour
 {
-    [SerializeField] private AudioClip agarrar;
+    [SerializeField] private AudioClip Agarrar;
+    private AudioSource audioSource;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void Start()
     {
-        if (other.CompareTag("Player"))
-        {
-            ControladorSonido.Instance.EjecutarSonido(agarrar);
-            Destroy(gameObject);
-        }
-
-
+        audioSource = GetComponent<AudioSource>();
     }
 
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            audioSource.PlayOneShot(Agarrar);
+        }
+    }
 }
