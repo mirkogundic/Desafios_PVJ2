@@ -6,16 +6,15 @@ using UnityEngine.UI;
 public class NewMonoBehaviourScript : MonoBehaviour
 {
     public Image rellenoBarraVida;
-    private Jugador playerController;
+    private PerfilJugador perfilJugador;
     private float vidaMaxima;
     void Start()
     {
-        playerController = GameObject.Find("Jugador").GetComponent<Jugador>();
-        vidaMaxima = playerController.vida;
+        vidaMaxima = perfilJugador.Vida;
     }
 
     void Update()
     {
-        rellenoBarraVida.fillAmount = playerController.vida / vidaMaxima;
+        rellenoBarraVida.fillAmount = perfilJugador.Vida / vidaMaxima;
     }
 }

@@ -7,27 +7,28 @@ using UnityEngine.SceneManagement;
 
 public class Jugador : MonoBehaviour
 {
-    [Header("Configuracion")]
-    [SerializeField] public float vida = 5f;
+    private PerfilJugador perfilJugador;
+    public PerfilJugador PerfilJugador { get => perfilJugador; }
+
     [SerializeField] private UnityEvent<string> OnTextChange;
     [SerializeField] private UnityEvent EsceneChange;
 
     private void Start()
     {
-        OnTextChange.Invoke(vida.ToString());
+        OnTextChange.Invoke(perfilJugador.Vida.ToString());
     }
 
     public void ModificarVida(float puntos)
     {
-        vida += puntos;
-        OnTextChange.Invoke(vida.ToString());
+        perfilJugador.Vida += puntos;
+        OnTextChange.Invoke(perfilJugador.Vida.ToString());
         Debug.Log(EstasVivo());
     }
 
 
     private bool EstasVivo()
     {
-        return vida > 0;
+        return perfilJugador.Vida > 0;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -39,7 +40,7 @@ public class Jugador : MonoBehaviour
 
     public void Update()
     {
-        if (vida <= 0 || Input.GetKeyDown(KeyCode.R))
+        if (perfilJugador.Vida <= 0 || Input.GetKeyDown(KeyCode.R))
             { 
             
             EsceneChange.Invoke();

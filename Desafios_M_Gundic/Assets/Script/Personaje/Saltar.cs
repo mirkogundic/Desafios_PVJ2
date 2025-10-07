@@ -4,14 +4,7 @@ using UnityEngine;
 
 public class Saltar : MonoBehaviour
 {
-
-    // Variables a configurar desde el editor
-    [Header("Configuracion")]
-    [SerializeField] private float fuerzaSalto = 5f;
-
-    [SerializeField] private AudioClip jumpSFX;
-    [SerializeField] private AudioClip collisionSFX;
-
+    private Jugador jugador;
 
     // Variables de uso interno en el script
     private bool puedoSaltar = true;
@@ -22,10 +15,16 @@ public class Saltar : MonoBehaviour
     private AudioSource miAudioSource;
 
     // Codigo ejecutado cuando el objeto se activa en el nivel
+    private void Awake()
+    {
+        jugador = GetComponent<Jugador>();
+    }
+
     private void OnEnable()
     {
         miRigidbody2D = GetComponent<Rigidbody2D>();
         miAudioSource = GetComponent<AudioSource>();
+        jugador = GetComponent<Jugador>();
     }
 
     // Codigo ejecutado en cada frame del juego (Intervalo variable)
@@ -36,7 +35,7 @@ public class Saltar : MonoBehaviour
             puedoSaltar = false;
 
             if (miAudioSource.isPlaying) { return; }
-            miAudioSource.PlayOneShot(jumpSFX);
+            miAudioSource.PlayOneShot(jugador.PerfilJugador.JumpSFX);
         }
     }
 
@@ -44,7 +43,7 @@ public class Saltar : MonoBehaviour
     {
         if (!puedoSaltar && !saltando)
         {
-            miRigidbody2D.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
+            miRigidbody2D.AddForce(Vector2.up * jugador.PerfilJugador.FuerzaSalto, ForceMode2D.Impulse);
             saltando = true;
         }
     }
@@ -55,8 +54,8 @@ public class Saltar : MonoBehaviour
         puedoSaltar = true;
         saltando = false;
 
-        if(miAudioSource.isPlaying) { return; }
-        miAudioSource.PlayOneShot(collisionSFX);
+        if (miAudioSource.isPlaying) { return; }
+        miAudioSource.PlayOneShot(jugador.PerfilJugador.CollisionSFX);
     }
 
 }

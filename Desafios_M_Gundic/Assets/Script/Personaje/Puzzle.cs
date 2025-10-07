@@ -10,6 +10,7 @@ public class Puzzle : MonoBehaviour
 
     private Queue<GameObject> objetivos;
     private Stack<GameObject> items;
+    private Progresion progresionJugador;
 
     private void Awake()
     {
@@ -17,6 +18,8 @@ public class Puzzle : MonoBehaviour
         items = new Stack<GameObject>();
         CargarObjetivos();
         VerObjetivos();
+
+        progresionJugador = GetComponent<Progresion>();
     }
 
     private void CargarObjetivos()
@@ -54,6 +57,8 @@ public class Puzzle : MonoBehaviour
             items.Push(objetivo);
             VerObjetivos();
             objetivo.transform.SetParent(Bolsa.transform);
+
+            progresionJugador.GanarExperiencia(10);
         }
     }
 
@@ -62,7 +67,8 @@ public class Puzzle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F1))
         {
             if (items.Count == 0) return;
-
+            
+            Debug.Log(progresionJugador.PerfilJugador.Nivel);
             UsarItem();
         
         }
