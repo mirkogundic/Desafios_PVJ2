@@ -1,17 +1,19 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class Jugador : MonoBehaviour
 {
+    [SerializeField]
     private PerfilJugador perfilJugador;
     public PerfilJugador PerfilJugador { get => perfilJugador; }
 
     [SerializeField] private UnityEvent<string> OnTextChange;
-    [SerializeField] private UnityEvent EsceneChange;
+    [SerializeField] private UnityEvent ResetGame;
 
     private void Start()
     {
@@ -38,15 +40,22 @@ public class Jugador : MonoBehaviour
         Debug.Log("Ganaste Esta Ronda!!!");
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+    }
+
     public void Update()
     {
-        if (perfilJugador.Vida <= 0 || Input.GetKeyDown(KeyCode.R))
+        if (perfilJugador.Vida <= 0 || Input.GetKeyDown(KeyCode.Escape))
             { 
             
-            EsceneChange.Invoke();
+            QuitGame();
 
         }
-
-
     }
 }

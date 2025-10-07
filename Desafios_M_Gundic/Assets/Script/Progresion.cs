@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Progresion : MonoBehaviour
 {
-
-    [SerializeField]
     private PerfilJugador perfilJugador;
     public PerfilJugador PerfilJugador { get => perfilJugador; }
 

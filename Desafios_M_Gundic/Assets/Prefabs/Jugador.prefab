@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 3447404504062568519}
   - component: {fileID: 232490236855630118}
   - component: {fileID: 8623633156429353521}
-  - component: {fileID: 8980378464164498597}
+  - component: {fileID: 1155130680070644316}
   m_Layer: 9
   m_Name: Jugador
   m_TagString: Player
@@ -203,7 +203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4a7188f2c932d440848ffd95da666e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 7.5
 --- !u!114 &4921522577414076223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,9 +215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c9e2533233db324db8d4ff85a742993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuerzaSalto: 10
-  jumpSFX: {fileID: 8300000, guid: afab08673b325d14eaff81b0d052bece, type: 3}
-  collisionSFX: {fileID: 8300000, guid: 84c66cc6dfc912945994beb40c7da971, type: 3}
 --- !u!114 &3447404504062568519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f621e7c9fde6a7469df1bf83d3c090b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 5
+  perfilJugador: {fileID: 11400000, guid: dcef1025bf4f7124abd8557a2eed05db, type: 2}
   OnTextChange:
     m_PersistentCalls:
       m_Calls:
@@ -247,6 +243,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  ResetGame:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!82 &232490236855630118
 AudioSource:
   m_ObjectHideFlags: 0
@@ -372,7 +371,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8980378464164498597
+--- !u!114 &1155130680070644316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -381,6 +380,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1389112241614583268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db7de481a109d094386cca3dd2229808, type: 3}
+  m_Script: {fileID: 11500000, guid: 267af3199c961eb40b6cc56adbc42fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -38,6 +38,9 @@ public class PerfilJugador : ScriptableObject
     [Header("Configuraciones de Atributos")]
     [SerializeField]
     [Range(5, 10)]
+    private float vidaInicial = 5f;
+    public float VidaInicial { get => vidaInicial; }
+
     private float vida = 5f;
     public float Vida { get => vida; set => vida = value; }
 
@@ -49,5 +52,12 @@ public class PerfilJugador : ScriptableObject
 
     public AudioClip JumpSFX { get => jumpSFX; }
     public AudioClip CollisionSFX { get => collisionSFX; }
+
+    public void ReiniciarPerfil()
+    {
+        vida = vidaInicial;
+        nivel = 1;
+        experiencia = 0;
+    }
 
 }

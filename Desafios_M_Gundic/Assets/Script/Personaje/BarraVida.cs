@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class NewMonoBehaviourScript : MonoBehaviour
 {
     public Image rellenoBarraVida;
-    private PerfilJugador perfilJugador;
+    public PerfilJugador perfilJugador;
     private float vidaMaxima;
     void Start()
     {
+        perfilJugador.ReiniciarPerfil();
         vidaMaxima = perfilJugador.Vida;
     }
 

@@ -5703,6 +5703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rellenoBarraVida: {fileID: 2068517139}
+  perfilJugador: {fileID: 11400000, guid: dcef1025bf4f7124abd8557a2eed05db, type: 2}
 --- !u!1 &424493611
 GameObject:
   m_ObjectHideFlags: 0
@@ -71495,6 +71496,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: perfilJugador
+      value: 
+      objectReference: {fileID: 11400000, guid: dcef1025bf4f7124abd8557a2eed05db, type: 2}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: ResetGame.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
       propertyPath: EsceneChange.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -71502,6 +71511,14 @@ PrefabInstance:
       propertyPath: OnTextChange.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: ResetGame.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: ResetGame.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: db7de481a109d094386cca3dd2229808, type: 3}
     - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
       propertyPath: EsceneChange.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
@@ -71518,6 +71535,14 @@ PrefabInstance:
       propertyPath: OnTextChange.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1429865290}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: ResetGame.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: ResetGame.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
       propertyPath: EsceneChange.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -71543,6 +71568,10 @@ PrefabInstance:
       value: ActualizarTextoHUB
       objectReference: {fileID: 0}
     - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: ResetGame.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEditor.MonoScript, UnityEditor.CoreModule
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
       propertyPath: EsceneChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: NextEscene, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -71553,6 +71582,10 @@ PrefabInstance:
     - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
       propertyPath: OnTextChange.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: HUDController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: ResetGame.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
       propertyPath: EsceneChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
