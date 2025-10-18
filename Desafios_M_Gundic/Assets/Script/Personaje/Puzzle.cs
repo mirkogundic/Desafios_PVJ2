@@ -12,6 +12,7 @@ public class Puzzle : MonoBehaviour
     private Stack<GameObject> items;
     private Progresion progresionJugador;
 
+
     private void Awake()
     {
         objetivos = new Queue<GameObject>();

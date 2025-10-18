@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     private int lives = 5;
 
     public UnityEvent<int> OnLivesChanged;
+    public UnityEvent ResetScene;
 
     public void LoseLife()
     {
@@ -16,7 +17,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (lives <= 0)
         {
-            //Usar en caso de Game over
+            ResetScene.Invoke();
         }
     }
 }

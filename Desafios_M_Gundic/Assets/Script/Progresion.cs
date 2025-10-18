@@ -5,7 +5,7 @@ using UnityEngine;
 public class Progresion : MonoBehaviour
 {
     private PerfilJugador perfilJugador;
-    public PerfilJugador PerfilJugador { get => perfilJugador; }
+    public PerfilJugador PerfilJugador { get => perfilJugador; set => perfilJugador = value; }
 
     public void GanarExperiencia(int nuevaExperiencia)
     {

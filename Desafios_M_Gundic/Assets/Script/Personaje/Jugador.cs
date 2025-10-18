@@ -13,7 +13,6 @@ public class Jugador : MonoBehaviour
     public PerfilJugador PerfilJugador { get => perfilJugador; }
 
     [SerializeField] private UnityEvent<string> OnTextChange;
-    [SerializeField] private UnityEvent ResetGame;
 
     private void Start()
     {
@@ -25,6 +24,7 @@ public class Jugador : MonoBehaviour
         perfilJugador.Vida += puntos;
         OnTextChange.Invoke(perfilJugador.Vida.ToString());
         Debug.Log(EstasVivo());
+            
     }
 
 
@@ -51,11 +51,20 @@ public class Jugador : MonoBehaviour
 
     public void Update()
     {
-        if (perfilJugador.Vida <= 0 || Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
             { 
-            
             QuitGame();
-
         }
+        //Reseteamos lan Escene si muere
+        if (perfilJugador.Vida == 0)
+        {
+            ResetScene();
+        }
+
+    }
+    public void ResetScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 }

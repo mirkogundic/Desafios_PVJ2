@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &355402108382851535
+--- !u!1001 &3391448032224417496
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,6 +8,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5231323418201578654, guid: 67269d0d0f8d95e4eada8110787a96c1, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5341057
+      objectReference: {fileID: 0}
+    - target: {fileID: -5231323418201578654, guid: 67269d0d0f8d95e4eada8110787a96c1, type: 3}
+      propertyPath: m_Size.y
+      value: 0.66112256
+      objectReference: {fileID: 0}
+    - target: {fileID: -5231323418201578654, guid: 67269d0d0f8d95e4eada8110787a96c1, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.003617674
+      objectReference: {fileID: 0}
+    - target: {fileID: -5231323418201578654, guid: 67269d0d0f8d95e4eada8110787a96c1, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.007005453
+      objectReference: {fileID: 0}
     - target: {fileID: -5231323418201578654, guid: 67269d0d0f8d95e4eada8110787a96c1, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
@@ -47,7 +63,19 @@ PrefabInstance:
     - target: {fileID: -3954493806772631217, guid: 67269d0d0f8d95e4eada8110787a96c1, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 685e031ce0d59a0499e3b7320509f8b7, type: 3}
+      objectReference: {fileID: -413656118, guid: e003643e023c1334d95c9f9d821194ec, type: 3}
+    - target: {fileID: -3954493806772631217, guid: 67269d0d0f8d95e4eada8110787a96c1, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8962264
+      objectReference: {fileID: 0}
+    - target: {fileID: -3954493806772631217, guid: 67269d0d0f8d95e4eada8110787a96c1, type: 3}
+      propertyPath: m_Color.g
+      value: 0.698551
+      objectReference: {fileID: 0}
+    - target: {fileID: -3954493806772631217, guid: 67269d0d0f8d95e4eada8110787a96c1, type: 3}
+      propertyPath: m_Color.r
+      value: 0.47770557
+      objectReference: {fileID: 0}
     - target: {fileID: -3954493806772631217, guid: 67269d0d0f8d95e4eada8110787a96c1, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
