@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,15 +27,31 @@ public class Mover : MonoBehaviour
     // Codigo ejecutado en cada frame del juego (Intervalo variable)
     private void Update()
     {
-        moverHorizontal = Input.GetAxis("Horizontal");
+        moverHorizontal = Input.GetAxisRaw("Horizontal");
         direccion = new Vector2(moverHorizontal, 0f);
 
         int velocidadX = (int)miRigidbody2D.linearVelocityX;
-        miSprite.flipX = velocidadX < 0;
+        //miSprite.flipX = velocidadX < 0;
         miAnimator.SetInteger("Velocidad", velocidadX);
     }
     private void FixedUpdate()
     {
-        miRigidbody2D.AddForce(direccion * jugador.PerfilJugador.VelocidadHorizontal);
+        miRigidbody2D.linearVelocity = new Vector2(moverHorizontal * jugador.PerfilJugador.VelocidadHorizontal,miRigidbody2D.linearVelocityY);
+        if ((moverHorizontal > 0 && !MirandoALaDerecha()) || (moverHorizontal < 0 && MirandoALaDerecha()))
+        {
+            Girar();
+        }
+    }
+
+    private void Girar()
+    {
+        Vector2 escala =transform.localScale;
+        escala.x *= -1;
+        transform.localScale = escala;
+    }
+
+    private bool MirandoALaDerecha()
+    {
+        return transform.localScale.x > 0;
     }
 }

@@ -1474,7 +1474,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 354277645327905199, guid: 26848c903d6a0c540a24501e5d43b81d, type: 3}
       propertyPath: nextScene
-      value: Nivel1
+      value: Inicio
       objectReference: {fileID: 0}
     - target: {fileID: 354277645327905199, guid: 26848c903d6a0c540a24501e5d43b81d, type: 3}
       propertyPath: transitionTime
