@@ -56,7 +56,7 @@ public class Jugador : MonoBehaviour
             QuitGame();
         }
         //Reseteamos lan Escene si muere
-        if (perfilJugador.Vida == 0)
+        if (perfilJugador.Vida <= 0)
         {
             ResetScene();
         }

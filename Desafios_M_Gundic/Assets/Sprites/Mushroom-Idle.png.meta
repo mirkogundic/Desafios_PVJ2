@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b7534cee7c2355a4dbbfa48b7a47a037
+guid: 1d82722ce3a924f4a9ab165edec5b1a8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,177 +97,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mushroom-Run_0
+      name: Mushroom-Idle_0
       rect:
         serializedVersion: 2
-        x: 24
+        x: 25
         y: 0
         width: 30
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a9bd3baf2a6dc343af3939580ee3c79
-      internalID: 724284647
+      spriteID: 616a626ba7470c74b812f08d71c0d43c
+      internalID: 966107268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom-Run_1
+      name: Mushroom-Idle_1
       rect:
         serializedVersion: 2
-        x: 104
+        x: 105
         y: 0
         width: 30
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 361cf32005f5389419c9b3f019c64297
-      internalID: -80923357
+      spriteID: a926d463a84d6ce49bde392106d43bfa
+      internalID: -1021797075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom-Run_2
+      name: Mushroom-Idle_2
       rect:
         serializedVersion: 2
-        x: 184
+        x: 185
         y: 0
         width: 30
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df8a48b84df9a5a4b848d9c1a7ebcc5f
-      internalID: -551467072
+      spriteID: cfbe02f0580ab804486946e5ee23b396
+      internalID: -1942166381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom-Run_3
+      name: Mushroom-Idle_3
       rect:
         serializedVersion: 2
-        x: 264
+        x: 265
         y: 0
         width: 30
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bb8295e3e1d3fd45b5cb91976c0b6da
-      internalID: -803409538
+      spriteID: f90a47758d2a41647a849816627ffd91
+      internalID: -2120548114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom-Run_4
+      name: Mushroom-Idle_4
       rect:
         serializedVersion: 2
-        x: 344
+        x: 345
         y: 0
         width: 30
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab17746b8f8c5a54eadf638943dcccfe
-      internalID: -1011576440
+      spriteID: 82575e1a700962845b30db921b1a9e08
+      internalID: 1184666575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom-Run_5
+      name: Mushroom-Idle_5
       rect:
         serializedVersion: 2
-        x: 424
+        x: 425
         y: 0
         width: 30
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf2150c3ec210424380d19e183e03b2f
-      internalID: -598624131
+      spriteID: a6811cd73505ce74e8fac5cd78d28f59
+      internalID: 1504049104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mushroom-Run_6
+      name: Mushroom-Idle_6
       rect:
         serializedVersion: 2
-        x: 504
+        x: 505
         y: 0
         width: 30
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 449824b2b11cf7944a693e2641ca3d48
-      internalID: -716846513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mushroom-Run_7
-      rect:
-        serializedVersion: 2
-        x: 584
-        y: 0
-        width: 30
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21941b32bbf3313489cb29faf28e7978
-      internalID: 1237425134
+      spriteID: 9ac6e51b417aee143b6514fdf6a18c69
+      internalID: -1860100535
       vertices: []
       indices: 
       edges: []
@@ -286,14 +264,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mushroom-Run_0: 724284647
-      Mushroom-Run_1: -80923357
-      Mushroom-Run_2: -551467072
-      Mushroom-Run_3: -803409538
-      Mushroom-Run_4: -1011576440
-      Mushroom-Run_5: -598624131
-      Mushroom-Run_6: -716846513
-      Mushroom-Run_7: 1237425134
+      Mushroom-Idle_0: 966107268
+      Mushroom-Idle_1: -1021797075
+      Mushroom-Idle_2: -1942166381
+      Mushroom-Idle_3: -2120548114
+      Mushroom-Idle_4: 1184666575
+      Mushroom-Idle_5: 1504049104
+      Mushroom-Idle_6: -1860100535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
