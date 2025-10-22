@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6646204574757095153}
   - component: {fileID: 3630256707842671727}
   - component: {fileID: 7936860242757851706}
-  - component: {fileID: -4156042920239869201}
+  - component: {fileID: 7236081337284993871}
   m_Layer: 7
   m_Name: FLYMONSTER
   m_TagString: Untagged
@@ -190,7 +190,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-4156042920239869201
+--- !u!114 &7236081337284993871
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,8 +199,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7702739872220075701}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f9a8302df7c9e443860d46f9969d9ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a143cf44a53d1e42a13797b3e5f8c59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 0
-  jugador: {fileID: 0}
+  radioBusqueda: 7
+  capaJugador:
+    serializedVersion: 2
+    m_Bits: 512
+  transformJugador: {fileID: 0}
+  velocidadMovimiento: 5
+  distanciaMaxima: 10
+  puntoInicial: {x: 0, y: 0, z: 0}
+  mirandoDerecha: 0
+  estadoActual: 0

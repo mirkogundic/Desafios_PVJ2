@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IAdeSeguimientoTerrestre : MonoBehaviour
+public class IAdeSeguimientoAereo: MonoBehaviour
 {
     public float radioBusqueda;
     public LayerMask capaJugador;
@@ -11,26 +11,26 @@ public class IAdeSeguimientoTerrestre : MonoBehaviour
     public float distanciaMaxima;
     public Vector3 puntoInicial;
     public bool mirandoDerecha;
-    public Rigidbody2D rb2D;
-    public Animator animator;
+
 
     public EstadosMovimiento estadoActual;
     public enum EstadosMovimiento
     {
-        Esperando,
+        Esperado,
         Siguiendo,
         Volviendo,
     }
     private void Start()
     {
         puntoInicial = transform.position;
+        velocidadMovimiento = Random.Range(3, 5);
     }
 
     private void Update()
     {
         switch (estadoActual)
         {
-            case EstadosMovimiento.Esperando:
+            case EstadosMovimiento.Esperado:
                 EstadoEsperando();
                 break;
             case EstadosMovimiento.Siguiendo:
@@ -58,27 +58,18 @@ public class IAdeSeguimientoTerrestre : MonoBehaviour
 
     private void EstadoSiguiendo()
     {
-        animator.SetBool("Corriendo", true);
-
         if (transformJugador == null)
         {
             estadoActual = EstadosMovimiento.Volviendo;
             return;
         }
 
-        if (transform.position.x < transformJugador.position.x)
-        {
-            rb2D.linearVelocity = new Vector2(velocidadMovimiento, rb2D.linearVelocityY);
-        }
-        else
-        {
-            rb2D.linearVelocity = new Vector2(-velocidadMovimiento, rb2D.linearVelocityY);
-        }
+        transform.position = Vector2.MoveTowards(transform.position, transformJugador.position, velocidadMovimiento * Time.deltaTime);
 
-            GirarAObjeto(transformJugador.position);
-
+        GirarAObjeto(transformJugador.position);
+    
         if (Vector2.Distance(transform.position, puntoInicial) > distanciaMaxima ||
-            Vector2.Distance(transform.position, transformJugador.position) > distanciaMaxima)
+            Vector2.Distance(transform.position, transformJugador.position) > distanciaMaxima) 
         {
             estadoActual = EstadosMovimiento.Volviendo;
         }
@@ -86,25 +77,12 @@ public class IAdeSeguimientoTerrestre : MonoBehaviour
 
     private void EstadoVolviendo()
     {
-        if (transform.position.x < puntoInicial.x)
-        {
-            rb2D.linearVelocity = new Vector2(velocidadMovimiento, rb2D.linearVelocityY);
-        }
-        else
-        {
-            rb2D.linearVelocity = new Vector2(-velocidadMovimiento, rb2D.linearVelocityY);
-        }
-
+        transform.position = Vector2.MoveTowards(transform.position, puntoInicial, velocidadMovimiento * Time.deltaTime);
         GirarAObjeto(puntoInicial);
 
-        if (Vector2.Distance(transform.position, puntoInicial) < 0.1f)
+        if (Vector2.Distance(transform.position, puntoInicial) < 0.01f)
         {
-            rb2D.linearVelocity = Vector2.zero;
-
-            animator.SetBool("Corriendo", false);
-
-
-            estadoActual = EstadosMovimiento.Esperando;
+            estadoActual = EstadosMovimiento.Esperado;
         }
 
     }
@@ -115,7 +93,7 @@ public class IAdeSeguimientoTerrestre : MonoBehaviour
         {
             Girar();
         }
-        else if (objetivo.x < transform.position.x && mirandoDerecha)
+        else if (objetivo.x <transform.position.x && mirandoDerecha)
         {
             Girar();
         }
@@ -124,10 +102,10 @@ public class IAdeSeguimientoTerrestre : MonoBehaviour
     private void Girar()
     {
         mirandoDerecha = !mirandoDerecha;
-        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180,0);
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, radioBusqueda);

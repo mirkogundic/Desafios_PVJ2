@@ -16,6 +16,10 @@ public class Jugador : MonoBehaviour
 
     private void Start()
     {
+        if (perfilJugador.Vida <= 0)
+        {
+            perfilJugador.ReiniciarPerfil();
+        }
         OnTextChange.Invoke(perfilJugador.Vida.ToString());
     }
 

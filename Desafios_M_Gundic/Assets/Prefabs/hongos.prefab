@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2180707921823447903}
   - component: {fileID: 1339027598007992306}
   - component: {fileID: 2263495724593410753}
-  - component: {fileID: -8211074528254259892}
+  - component: {fileID: 650516690862538245}
   m_Layer: 7
   m_Name: hongos
   m_TagString: Untagged
@@ -126,7 +126,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.008775711, y: -0.590904}
+  m_Offset: {x: 0, y: 0}
   m_Radius: 0.6608906
 --- !u!50 &2180707921823447903
 Rigidbody2D:
@@ -190,7 +190,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-8211074528254259892
+--- !u!114 &650516690862538245
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,8 +199,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 7784953263268981452}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f9a8302df7c9e443860d46f9969d9ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 83bc3a98fcb2c4047bc87c46edcc9201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 5
-  jugador: {fileID: 0}
+  radioBusqueda: 8
+  capaJugador:
+    serializedVersion: 2
+    m_Bits: 512
+  transformJugador: {fileID: 0}
+  velocidadMovimiento: 3
+  distanciaMaxima: 10
+  puntoInicial: {x: 0, y: 0, z: 0}
+  mirandoDerecha: 0
+  rb2D: {fileID: 2180707921823447903}
+  animator: {fileID: 2263495724593410753}
+  estadoActual: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IAdeSeguimientoAereo: MonoBehaviour
+public class IAdeSeguimientoTerrestre : MonoBehaviour
 {
     public float radioBusqueda;
     public LayerMask capaJugador;
@@ -11,24 +11,27 @@ public class IAdeSeguimientoAereo: MonoBehaviour
     public float distanciaMaxima;
     public Vector3 puntoInicial;
     public bool mirandoDerecha;
+    public Rigidbody2D rb2D;
+    public Animator animator;
 
     public EstadosMovimiento estadoActual;
     public enum EstadosMovimiento
     {
-        Esperado,
+        Esperando,
         Siguiendo,
         Volviendo,
     }
     private void Start()
     {
         puntoInicial = transform.position;
+        velocidadMovimiento = Random.Range(2, 6);
     }
 
     private void Update()
     {
         switch (estadoActual)
         {
-            case EstadosMovimiento.Esperado:
+            case EstadosMovimiento.Esperando:
                 EstadoEsperando();
                 break;
             case EstadosMovimiento.Siguiendo:
@@ -56,18 +59,27 @@ public class IAdeSeguimientoAereo: MonoBehaviour
 
     private void EstadoSiguiendo()
     {
+        animator.SetBool("Corriendo", true);
+
         if (transformJugador == null)
         {
             estadoActual = EstadosMovimiento.Volviendo;
             return;
         }
 
-        transform.position = Vector2.MoveTowards(transform.position, transformJugador.position, velocidadMovimiento * Time.deltaTime);
+        if (transform.position.x < transformJugador.position.x)
+        {
+            rb2D.linearVelocity = new Vector2(velocidadMovimiento, rb2D.linearVelocityY);
+        }
+        else
+        {
+            rb2D.linearVelocity = new Vector2(-velocidadMovimiento, rb2D.linearVelocityY);
+        }
 
-        GirarAObjeto(transformJugador.position);
-    
+            GirarAObjeto(transformJugador.position);
+
         if (Vector2.Distance(transform.position, puntoInicial) > distanciaMaxima ||
-            Vector2.Distance(transform.position, transformJugador.position) > distanciaMaxima) 
+            Vector2.Distance(transform.position, transformJugador.position) > distanciaMaxima)
         {
             estadoActual = EstadosMovimiento.Volviendo;
         }
@@ -75,12 +87,25 @@ public class IAdeSeguimientoAereo: MonoBehaviour
 
     private void EstadoVolviendo()
     {
-        transform.position = Vector2.MoveTowards(transform.position, puntoInicial, velocidadMovimiento * Time.deltaTime);
+        if (transform.position.x < puntoInicial.x)
+        {
+            rb2D.linearVelocity = new Vector2(velocidadMovimiento, rb2D.linearVelocityY);
+        }
+        else
+        {
+            rb2D.linearVelocity = new Vector2(-velocidadMovimiento, rb2D.linearVelocityY);
+        }
+
         GirarAObjeto(puntoInicial);
 
-        if (Vector2.Distance(transform.position, puntoInicial) < 0.01f)
+        if (Vector2.Distance(transform.position, puntoInicial) < 0.1f)
         {
-            estadoActual = EstadosMovimiento.Esperado;
+            rb2D.linearVelocity = Vector2.zero;
+
+            animator.SetBool("Corriendo", false);
+
+
+            estadoActual = EstadosMovimiento.Esperando;
         }
 
     }
@@ -91,7 +116,7 @@ public class IAdeSeguimientoAereo: MonoBehaviour
         {
             Girar();
         }
-        else if (objetivo.x <transform.position.x && mirandoDerecha)
+        else if (objetivo.x < transform.position.x && mirandoDerecha)
         {
             Girar();
         }
@@ -100,10 +125,10 @@ public class IAdeSeguimientoAereo: MonoBehaviour
     private void Girar()
     {
         mirandoDerecha = !mirandoDerecha;
-        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180,0);
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, radioBusqueda);

@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class Saltar : MonoBehaviour
 {
+    [SerializeField] float rayDistance;
+    [SerializeField] LayerMask groundLayer;
+
+    [Header("Salto Regulable")]
+    [Range(0, 1)] [SerializeField] private float multiplicadorCancelarSalto;
+    [SerializeField] private float multiplicadorGravedad;
+    private float escalaGravedad;
+    private bool botonSaltoArriba = true;
+
     private Jugador jugador;
 
     // Variables de uso interno en el script
@@ -15,9 +24,14 @@ public class Saltar : MonoBehaviour
     private AudioSource miAudioSource;
 
     // Codigo ejecutado cuando el objeto se activa en el nivel
+    private void Start()
+    {
+        escalaGravedad = miRigidbody2D.gravityScale;
+    }
     private void Awake()
     {
         jugador = GetComponent<Jugador>();
+        
     }
 
     private void OnEnable()
@@ -30,32 +44,70 @@ public class Saltar : MonoBehaviour
     // Codigo ejecutado en cada frame del juego (Intervalo variable)
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && puedoSaltar)
+        puedoSaltar = IsGrounded();
+
+        if (Input.GetButton("Jump") && puedoSaltar)
         {
-            puedoSaltar = false;
+            saltando = true;
 
             if (miAudioSource.isPlaying) { return; }
             miAudioSource.PlayOneShot(jugador.PerfilJugador.JumpSFX);
+        }
+
+        if (Input.GetButtonUp("Jump"))
+        {
+            BotonSaltarArriba();
         }
     }
 
     private void FixedUpdate()
     {
-        if (!puedoSaltar && !saltando)
+        if (saltando && botonSaltoArriba)
         {
             miRigidbody2D.AddForce(Vector2.up * jugador.PerfilJugador.FuerzaSalto, ForceMode2D.Impulse);
-            saltando = true;
+            saltando = false;
+            botonSaltoArriba = false;
         }
+
+        if (miRigidbody2D.linearVelocityY < 0 && !puedoSaltar)
+        {
+            miRigidbody2D.gravityScale = escalaGravedad * multiplicadorGravedad;
+        }
+        else
+        {
+            miRigidbody2D.gravityScale = escalaGravedad;
+        }
+
     }
 
     // Codigo ejecutado cuando el jugador colisiona con otro objeto
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        puedoSaltar = true;
-        saltando = false;
 
         if (miAudioSource.isPlaying) { return; }
         miAudioSource.PlayOneShot(jugador.PerfilJugador.CollisionSFX);
     }
+    
+    private void BotonSaltarArriba()
+    {
+        if (miRigidbody2D.linearVelocityY > 0)
+        {
+            miRigidbody2D.AddForce(Vector2.down * miRigidbody2D.linearVelocityY * (1 - multiplicadorCancelarSalto), ForceMode2D.Impulse);
+        }
+        botonSaltoArriba = true;
+        saltando = false;
 
+    }
+
+    private bool IsGrounded()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, rayDistance, groundLayer);
+        return hit.collider != null;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);
+    }
 }
