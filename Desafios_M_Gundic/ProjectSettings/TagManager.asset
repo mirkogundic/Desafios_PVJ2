@@ -7,6 +7,7 @@ TagManager:
   - Keys
   - Meta
   - Coleccionable
+  - Muros
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Stop Enemys
   - Player
   - Piso
-  - 
+  - Trampas
   - 
   - 
   - 
@@ -41,11 +42,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: fondo
+  - name: Fondo
     uniqueID: 168563275
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Decorativos
+    uniqueID: 1404456583
     locked: 0
   - name: HUB
     uniqueID: 2476804205
