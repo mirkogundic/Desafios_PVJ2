@@ -8,9 +8,13 @@ public class IAdeSeguimientoAereo: MonoBehaviour
     public LayerMask capaJugador;
     public Transform transformJugador;
     public float velocidadMovimiento;
+    public bool mirandoDerecha;
+
+    [Header("Actualizar punto Inicial")]    
     public float distanciaMaxima;
     public Vector3 puntoInicial;
-    public bool mirandoDerecha;
+    public bool ActualizarOrigen = true;
+    public float tiempoParaNuevoOrigen = 10f;
 
 
     public EstadosMovimiento estadoActual;
@@ -24,6 +28,11 @@ public class IAdeSeguimientoAereo: MonoBehaviour
     {
         puntoInicial = transform.position;
         velocidadMovimiento = Random.Range(3, 5);
+
+        if (ActualizarOrigen)
+        {
+            StartCoroutine(ActualizarOrigenTimer());
+        }
     }
 
     private void Update()
@@ -103,6 +112,19 @@ public class IAdeSeguimientoAereo: MonoBehaviour
     {
         mirandoDerecha = !mirandoDerecha;
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180,0);
+    }
+
+    private IEnumerator ActualizarOrigenTimer()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(tiempoParaNuevoOrigen);
+
+            if (estadoActual == EstadosMovimiento.Siguiendo)
+                continue;
+
+            transform.position = puntoInicial;
+        }
     }
 
     private void OnDrawGizmosSelected()
