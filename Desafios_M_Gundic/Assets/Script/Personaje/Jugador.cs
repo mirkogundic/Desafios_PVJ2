@@ -14,8 +14,11 @@ public class Jugador : MonoBehaviour
 
     [SerializeField] private UnityEvent<string> OnTextChange;
 
+    private AudioSource miAudioSource;
+
     private void Start()
     {
+        miAudioSource = GetComponent<AudioSource>();
         if (perfilJugador.Vida <= 0)
         {
             perfilJugador.ReiniciarPerfil();
@@ -25,6 +28,10 @@ public class Jugador : MonoBehaviour
 
     public void ModificarVida(float puntos)
     {
+        if (puntos <= -1)
+        {
+            miAudioSource.PlayOneShot(perfilJugador.DamageSFX);
+        }
         perfilJugador.Vida += puntos;
         OnTextChange.Invoke(perfilJugador.Vida.ToString());
         Debug.Log(EstasVivo());

@@ -2,7 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-public class InteraccionNPC : MonoBehaviour
+public class InteraccionObjetos : MonoBehaviour
 {
     [SerializeField] private GameObject Jugador;
 
@@ -12,16 +12,10 @@ public class InteraccionNPC : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
 
-    [Header("Audio")]
-    public AudioClip enterZone;
-    private AudioSource miaudiosource;
-
     private bool isPlayerInRange;
     private bool didDialogueStart;
     private int lineIndex;
     private float typingTime = 0.05f;
-    private GameObject dadCanvas;
-    private Transform childCanvas;
 
     private void Start()
     {
@@ -29,7 +23,6 @@ public class InteraccionNPC : MonoBehaviour
         dialogueMark = transform.GetChild(0).gameObject;
         dialoguePanel = GameObject.Find("Canvas").transform.Find("Dialogue Panel").gameObject;
         dialogueText = GameObject.Find("Canvas").transform.Find("Dialogue Panel/Dialogue Text").GetComponent<TMP_Text>();
-        miaudiosource = GetComponent<AudioSource>();
     }
 
 
@@ -50,14 +43,6 @@ public class InteraccionNPC : MonoBehaviour
                 StopAllCoroutines();
                 dialogueText.text = dialogueLines[lineIndex];
             }
-        }
-        if (Jugador.transform.position.x < transform.position.x)
-        {
-            transform.eulerAngles = new Vector3(0, 180, 0);
-        }
-        else
-        {
-            transform.eulerAngles = new Vector3(0, 0, 0);
         }
     }
 
@@ -92,7 +77,7 @@ public class InteraccionNPC : MonoBehaviour
     {
         dialogueText.text = string.Empty;
 
-        foreach(char ch in dialogueLines[lineIndex])
+        foreach (char ch in dialogueLines[lineIndex])
         {
             dialogueText.text += ch;
             yield return new WaitForSecondsRealtime(typingTime);
@@ -105,7 +90,6 @@ public class InteraccionNPC : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            miaudiosource.PlayOneShot(enterZone);
             isPlayerInRange = true;
             dialogueMark.SetActive(true);
         }
@@ -119,6 +103,4 @@ public class InteraccionNPC : MonoBehaviour
             dialogueMark.SetActive(false);
         }
     }
-
-
 }

@@ -16,9 +16,12 @@ public class GeneradorTrampasWithPool : MonoBehaviour
     [SerializeField] private Vector2 direccionProyectil = Vector2.zero;
 
     private ObjectPool objectPool;
+    private AudioSource miaudioSource;
+    public AudioClip generateSFX;
 
     private void Awake()
     {
+        miaudioSource = GetComponent<AudioSource>();
         objectPool = GetComponent<ObjectPool>();
     }
     void Start()
@@ -34,6 +37,7 @@ public class GeneradorTrampasWithPool : MonoBehaviour
             pooledObject.transform.position = transform.position;
             pooledObject.transform.rotation = Quaternion.identity;
             pooledObject.SetActive(true);
+            miaudioSource.PlayOneShot(generateSFX);
 
             ProyectilRecto proyectil = pooledObject.GetComponent<ProyectilRecto>();
             if (proyectil != null)

@@ -49,9 +49,11 @@ public class PerfilJugador : ScriptableObject
 
     [SerializeField] private AudioClip jumpSFX;
     [SerializeField] private AudioClip collisionSFX;
+    [SerializeField] private AudioClip damageSFX;
 
     public AudioClip JumpSFX { get => jumpSFX; }
     public AudioClip CollisionSFX { get => collisionSFX; }
+    public AudioClip DamageSFX { get => damageSFX; }
 
     public void ReiniciarPerfil()
     {

@@ -11,6 +11,7 @@ public class HerirProyectiles : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+
             Jugador jugador = collision.gameObject.GetComponent<Jugador>();
             jugador.ModificarVida(-puntos);
             Debug.Log(" PUNTOS DE DAÑO REALIZADOS AL JUGADOR " + puntos);

@@ -48,6 +48,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Trampas
+    uniqueID: 762789231
+    locked: 0
   - name: Decorativos
     uniqueID: 1404456583
     locked: 0
