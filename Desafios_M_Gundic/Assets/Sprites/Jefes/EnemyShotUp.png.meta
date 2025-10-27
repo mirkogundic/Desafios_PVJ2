@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 09cf11a961beb9940a4d8fe89262ac0d
+guid: a55d6a5fa2788a04bba0809e237db2ee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,9 +37,9 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,177 +97,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: burning_loop_2_0
+      name: EnemyShotUp_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 66
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed6f04658e33292409a04689ade08a60
-      internalID: 1870941780
+      spriteID: b9da5d397b0f9e649b6793acecc2a336
+      internalID: -586924557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: burning_loop_2_1
+      name: EnemyShotUp_1
       rect:
         serializedVersion: 2
-        x: 20
+        x: 67
         y: 0
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 66
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52781272dd1fdb3418a3d77b7ddd4009
-      internalID: -2119555074
+      spriteID: 464b3152285ab7b46b439c2d9a108c56
+      internalID: -192612959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: burning_loop_2_2
+      name: EnemyShotUp_2
       rect:
         serializedVersion: 2
-        x: 40
+        x: 134
         y: 0
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 66
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73d53ef887d7abb4e8ddf8b0311d997e
-      internalID: 351731030
+      spriteID: d2e8b8eec5ef69f4aa8da62a8f001ea5
+      internalID: -1322364665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: burning_loop_2_3
+      name: EnemyShotUp_3
       rect:
         serializedVersion: 2
-        x: 60
+        x: 201
         y: 0
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 66
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2291c36d9cb93164d8078215ef6d3457
-      internalID: -593712916
+      spriteID: 65e5609be2cd03b46999fc01f831a806
+      internalID: -576973727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: burning_loop_2_4
+      name: EnemyShotUp_4
       rect:
         serializedVersion: 2
-        x: 80
+        x: 268
         y: 0
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 66
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc65475b7ea0dfc49b37c8d827ac8231
-      internalID: 213653691
+      spriteID: 157a767424d38e94bab6aa46d06b8072
+      internalID: -484179691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: burning_loop_2_5
+      name: EnemyShotUp_5
       rect:
         serializedVersion: 2
-        x: 100
+        x: 335
         y: 0
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 66
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2876b0f58c7978e4c8ef259d306ea7b6
-      internalID: -152924307
+      spriteID: 7954897e369351e4fafd0fa1b7d455d7
+      internalID: -1765648992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: burning_loop_2_6
+      name: EnemyShotUp_6
       rect:
         serializedVersion: 2
-        x: 120
+        x: 402
         y: 0
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 66
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5095ebdb450725f48837a9efbaede1f2
-      internalID: -1148193810
+      spriteID: bd5c46bc8cfc2a24581530f0a783d702
+      internalID: 1779922668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: burning_loop_2_7
+      name: EnemyShotUp_7
       rect:
         serializedVersion: 2
-        x: 140
+        x: 469
         y: 0
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 66
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 533ff5ce222f7c149aad31512df3739c
-      internalID: 1760278932
+      spriteID: 11192219e6ec0e640a6e00f07d153935
+      internalID: -552528868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyShotUp_8
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 0
+        width: 66
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb2690fe50edf24cb3c215f2bbeb5d6
+      internalID: 667293703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyShotUp_9
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 0
+        width: 66
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e624d1a61f58c44bad90e1f45e81350
+      internalID: -1015934584
       vertices: []
       indices: 
       edges: []
@@ -286,14 +330,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      burning_loop_2_0: 1870941780
-      burning_loop_2_1: -2119555074
-      burning_loop_2_2: 351731030
-      burning_loop_2_3: -593712916
-      burning_loop_2_4: 213653691
-      burning_loop_2_5: -152924307
-      burning_loop_2_6: -1148193810
-      burning_loop_2_7: 1760278932
+      EnemyShotUp_0: -586924557
+      EnemyShotUp_1: -192612959
+      EnemyShotUp_2: -1322364665
+      EnemyShotUp_3: -576973727
+      EnemyShotUp_4: -484179691
+      EnemyShotUp_5: -1765648992
+      EnemyShotUp_6: 1779922668
+      EnemyShotUp_7: -552528868
+      EnemyShotUp_8: 667293703
+      EnemyShotUp_9: -1015934584
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

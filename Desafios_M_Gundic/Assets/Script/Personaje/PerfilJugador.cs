@@ -31,7 +31,10 @@ public class PerfilJugador : ScriptableObject
     float velocidad = 5f;
     public float VelocidadHorizontal { get => velocidad; set => velocidad = value; }
 
-
+    [SerializeField]
+    [Range(0.05f, 0.5f)]
+    private float multiplicadorAnimacion = 0.25f;
+    public float MultiplicadorAnimacion { get => multiplicadorAnimacion; set => multiplicadorAnimacion = value; }
     [SerializeField] private float fuerzaSalto = 5f;
     public float FuerzaSalto { get => fuerzaSalto; set => fuerzaSalto = value; }
 
@@ -50,10 +53,12 @@ public class PerfilJugador : ScriptableObject
     [SerializeField] private AudioClip jumpSFX;
     [SerializeField] private AudioClip collisionSFX;
     [SerializeField] private AudioClip damageSFX;
+    [SerializeField] private AudioClip caminarSFX;
 
     public AudioClip JumpSFX { get => jumpSFX; }
     public AudioClip CollisionSFX { get => collisionSFX; }
     public AudioClip DamageSFX { get => damageSFX; }
+    public AudioClip CaminarSFX { get => caminarSFX; }
 
     public void ReiniciarPerfil()
     {

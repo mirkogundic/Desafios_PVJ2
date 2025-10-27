@@ -58844,7 +58844,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 6.2725024
+  orthographic size: 5.19
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
@@ -126226,7 +126226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2857501011926162028, guid: 26848c903d6a0c540a24501e5d43b81d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8086278135756475361, guid: 26848c903d6a0c540a24501e5d43b81d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -126278,7 +126278,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 354277645327905199, guid: 26848c903d6a0c540a24501e5d43b81d, type: 3}
   m_PrefabInstance: {fileID: 1804860965}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1804860968}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2c31c0ef45285146bcf73498720393c, type: 3}
@@ -126287,6 +126287,11 @@ MonoBehaviour:
 --- !u!4 &1804860967 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8086278135756475361, guid: 26848c903d6a0c540a24501e5d43b81d, type: 3}
+  m_PrefabInstance: {fileID: 1804860965}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1804860968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2857501011926162028, guid: 26848c903d6a0c540a24501e5d43b81d, type: 3}
   m_PrefabInstance: {fileID: 1804860965}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1822929254
@@ -126779,7 +126784,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 34
-    OrthographicSize: 6.2725024
+    OrthographicSize: 5.19
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -127491,6 +127496,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
+      propertyPath: activarEscena
+      value: 
+      objectReference: {fileID: 1804860968}
     - target: {fileID: 3447404504062568519, guid: e3ea26864821d734387cc5d54b4c62be, type: 3}
       propertyPath: OnTextChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

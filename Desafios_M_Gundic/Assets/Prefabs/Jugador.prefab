@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 1155130680070644316}
   - component: {fileID: 4675703162674823468}
   - component: {fileID: 9028571057206335614}
+  - component: {fileID: 7156661403127177182}
   m_Layer: 9
   m_Name: Jugador
   m_TagString: Player
@@ -206,6 +207,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4a7188f2c932d440848ffd95da666e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidadX: 0
+  animSpeedMin: 0.5
+  animSpeedMax: 2
 --- !u!114 &4921522577414076223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,6 +256,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  activarEscena: {fileID: 0}
 --- !u!82 &232490236855630118
 AudioSource:
   m_ObjectHideFlags: 0
@@ -361,7 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 267af3199c961eb40b6cc56adbc42fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  perfilJugador: {fileID: 0}
+  perfilJugador: {fileID: 11400000, guid: dcef1025bf4f7124abd8557a2eed05db, type: 2}
 --- !u!114 &4675703162674823468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,6 +389,18 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389112241614583268}
   m_Enabled: 1
+--- !u!114 &7156661403127177182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389112241614583268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4c6698a5af4894c8dbe91f9da1323c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1861654650735042428
 GameObject:
   m_ObjectHideFlags: 0

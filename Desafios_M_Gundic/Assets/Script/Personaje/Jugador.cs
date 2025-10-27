@@ -1,6 +1,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -15,6 +16,7 @@ public class Jugador : MonoBehaviour
     [SerializeField] private UnityEvent<string> OnTextChange;
 
     private AudioSource miAudioSource;
+    public GameObject activarEscena;
 
     private void Start()
     {
@@ -24,6 +26,8 @@ public class Jugador : MonoBehaviour
             perfilJugador.ReiniciarPerfil();
         }
         OnTextChange.Invoke(perfilJugador.Vida.ToString());
+        activarEscena.gameObject.SetActive(true);
+
     }
 
     public void ModificarVida(float puntos)
@@ -78,4 +82,5 @@ public class Jugador : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
     }
+
 }

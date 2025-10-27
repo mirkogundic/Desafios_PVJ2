@@ -14,6 +14,11 @@ public class Mover : MonoBehaviour
     private Animator miAnimator;
     private SpriteRenderer miSprite;
     private Jugador jugador;
+    public int velocidadX;
+
+    [Header("Configuraciones de animación")]
+    [SerializeField] private float animSpeedMin = 0.5f; // V.minima del Animator
+    [SerializeField] private float animSpeedMax = 2f;   // V.maxima del Animator
 
     // Codigo ejecutado cuando el objeto se activa en el nivel
     private void OnEnable()
@@ -28,9 +33,13 @@ public class Mover : MonoBehaviour
     private void Update()
     {
         moverHorizontal = Input.GetAxisRaw("Horizontal");
-        direccion = new Vector2(moverHorizontal, 0f);
+        //direccion = new Vector2(moverHorizontal, 0f);
+        float velocidadActual = Mathf.Abs(miRigidbody2D.linearVelocityX);
+        float velocidadAnim = Mathf.Clamp(1f + velocidadActual * jugador.PerfilJugador.MultiplicadorAnimacion, animSpeedMin, animSpeedMax);
+        miAnimator.speed = velocidadAnim;
 
-        int velocidadX = (int)miRigidbody2D.linearVelocityX;
+
+        velocidadX = (int)miRigidbody2D.linearVelocityX;
         //miSprite.flipX = velocidadX < 0;
         miAnimator.SetInteger("Velocidad", velocidadX);
     }

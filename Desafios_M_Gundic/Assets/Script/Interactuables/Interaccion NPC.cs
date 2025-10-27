@@ -20,8 +20,6 @@ public class InteraccionNPC : MonoBehaviour
     private bool didDialogueStart;
     private int lineIndex;
     private float typingTime = 0.05f;
-    private GameObject dadCanvas;
-    private Transform childCanvas;
 
     private void Start()
     {
