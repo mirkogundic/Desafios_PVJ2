@@ -257,7 +257,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3859711067220229095, guid: d11ab26a0afaf9640882d5efc08e024f, type: 3}
       propertyPath: 'dialogueLines.Array.data[0]'
-      value: '"Texto PC"'
+      value: "Qu\xE9 objeto m\xE1s curioso, parece haber personas dentro."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859711067220229095, guid: d11ab26a0afaf9640882d5efc08e024f, type: 3}
+      propertyPath: 'dialogueLines.Array.data[1]'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4388104887038442087, guid: d11ab26a0afaf9640882d5efc08e024f, type: 3}
       propertyPath: m_Name
@@ -1378,33 +1382,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &645036835 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3463378372739151715, guid: d11ab26a0afaf9640882d5efc08e024f, type: 3}
-  m_PrefabInstance: {fileID: 1540209089}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &645036837
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 645036835}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b043c26d97456364989a02e3850b328b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &647235186
 GameObject:
   m_ObjectHideFlags: 0
@@ -2878,10 +2855,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1705576830}
     m_Modifications:
-    - target: {fileID: 1150708334450722193, guid: d11ab26a0afaf9640882d5efc08e024f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 059b8bf777870d547997f33ccf6164f4, type: 3}
     - target: {fileID: 2888536975065895837, guid: d11ab26a0afaf9640882d5efc08e024f, type: 3}
       propertyPath: m_Size.x
       value: 1.5047097
@@ -3016,10 +2989,7 @@ PrefabInstance:
     - {fileID: 4893105975025909804, guid: d11ab26a0afaf9640882d5efc08e024f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3463378372739151715, guid: d11ab26a0afaf9640882d5efc08e024f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 645036837}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d11ab26a0afaf9640882d5efc08e024f, type: 3}
 --- !u!1 &1616328940 stripped
 GameObject:

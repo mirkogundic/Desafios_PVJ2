@@ -1,0 +1,1648 @@
+fileFormatVersion: 2
+guid: 6e15ad7826daa994bbc76971f4d89829
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SprteSheetLogo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 238
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f641ea63de9edda468ceefbc806368c8
+      internalID: -1500984776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 238
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597ac9e03ccd7704da7205e683cc18da
+      internalID: 774580963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 238
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fcb638d580b374f880ad4515aea76c
+      internalID: 1615063603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_3
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 238
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1730a77fc9a2e674388fac4d4bb3afdf
+      internalID: -1522836510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_4
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 238
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d100f172dca69094d9d78f5e099e17f9
+      internalID: 402323189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_5
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 238
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2b5b9d64db47746a1bebb145050d50
+      internalID: -1778335458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_6
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 238
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6871bf27e14b3064d837fcd8b35391e8
+      internalID: 1338298050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_7
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 238
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba5f58c83f6a0d47a9ed66270087554
+      internalID: -1740549621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_8
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 238
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3ce022b935b2f4faf125ea71c5a068
+      internalID: -1446203984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226f6831bf53f5d41b95534f5d435f22
+      internalID: 1110465177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_10
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 204
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa73c3cde9e79e43ae1d6b0e4852720
+      internalID: 1684059751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 204
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00de7f2213f9924eaffd65352a31de3
+      internalID: -1539341411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_12
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 204
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d33dde170e20fe4a97f4dd29c4d8c89
+      internalID: 636872348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_13
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 204
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd041de7e26dc547a82dd6d0f77da9d
+      internalID: 717025996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_14
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 204
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8ab8cb0c0241e4c99955ccdf399770
+      internalID: -50769422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_15
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 204
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd98310d67f70144ca9bcf48e267366a
+      internalID: -280146611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_16
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 204
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c06464e26b3d643a17c9692dc6a12c
+      internalID: 93867798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_17
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 204
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c711d7b67dcac75409d4b98d8fd23fc0
+      internalID: 232901883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f725fcd5edccd2440a2085d16f9f79a8
+      internalID: -1071906269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_19
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 170
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d91037a57d98441b185f525504788c
+      internalID: 1086025525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_20
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 170
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72688473be75fdb4b822d121656f864a
+      internalID: -1437551671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_21
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 170
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d415fb02e6a3940bc21b1264d5365f
+      internalID: -1119898083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_22
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 170
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b203bf25d92edca4986af3671a48eaca
+      internalID: -1574516986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_23
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 170
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62dd24fa3fbf604dad12f4ca0dd85d9
+      internalID: -392760489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_24
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 170
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6ceb5d30046d344825bf4438a0a870
+      internalID: -761378899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_25
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 170
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1fa3097d2465c4aab9d5308cf2024f
+      internalID: 1298474056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_26
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 170
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e4cd0916d99fd4c9181f69f75abcf9
+      internalID: -1317321941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62e2ed286cb33f4b972030143053141
+      internalID: 911833511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_28
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 136
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82083da0f1102354db93f8dd36883839
+      internalID: -1249653379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_29
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 136
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46a34e79302c444891cd99d16b94615
+      internalID: 1921949775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_30
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 136
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df9cd527dc062041bd2c5a1058847df
+      internalID: -708386425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_31
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 136
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2cc4639804f3146a4148dae6e0d03e
+      internalID: 1308834582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_32
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 136
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ce68738ca07bd4fb01c10297c2c910
+      internalID: -534273382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_33
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 136
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f0e3744ff2f52458ffe1afae294075
+      internalID: 1221902919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_34
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 136
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee76ef20227de6419bed22bbcfda542
+      internalID: -989430058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_35
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 136
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd60fdb2eac92c4993ae00df13b1c26
+      internalID: 1436973952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfa6c397a786cc43aeb22b36abe89dc
+      internalID: 850517695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_37
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 102
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512f242149384f045ae0e29fc683719b
+      internalID: 1090846072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_38
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 102
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac16e22600ed8f4f83c05ba4e5f82e3
+      internalID: -1529943374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_39
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 102
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8073337ee92dd1a4da0d9f912b6bda2f
+      internalID: -1557042299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_40
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 102
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ba5ce27f40b5c4e875b18a901fe9bb
+      internalID: -782392175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_41
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 102
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b759219f001a71b419e55e2d6a6354b3
+      internalID: 1884122524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_42
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 102
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31aeacdcc7c2894bb558cd379762a8c
+      internalID: 509144302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_43
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 102
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cf6abc31b8efa4bb155a39d23fbf0d
+      internalID: 1099024498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_44
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 102
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395b015f05dcb07468b0b022dcbd48a9
+      internalID: 1833797140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957a242db6b903746bb0fb0d49458aba
+      internalID: -1759583180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_46
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 68
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a4abcd78f6a9743b8c548f37c9af77
+      internalID: -410067416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_47
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 68
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98637352c57d60a4d9e754f5c980f9d9
+      internalID: -1211221260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_48
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 68
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2ddd1e682eca947b3b95c9ec4e462a
+      internalID: 737577011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_49
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 68
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c4c789d24b94e4eb964b57505a495f
+      internalID: 464380404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_50
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 68
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd32bc59253ba054da3d8d53473d3d1b
+      internalID: -1833228460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_51
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 68
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d655d793785dcd74e89e9b7a682f90a7
+      internalID: -811005474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_52
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 68
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121199d091f0f1746b63f0c5f8fe6c58
+      internalID: 392790885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_53
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 68
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fea9cb54e4d884d874266589ff7948
+      internalID: -2123150090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70032a66e2cf7394da64610144f82fd5
+      internalID: 747593448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_55
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 34
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8677929ada1e847a2647893ea21f51
+      internalID: -1997492219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_56
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 34
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228268fc6e0d86842b26c50304e7daa0
+      internalID: 570460358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_57
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 34
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b0ab5003989324ebfb0985debdc740
+      internalID: 493226093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_58
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 34
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e8c5120f3bf0348a411ed1f930bf5f
+      internalID: -413819017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_59
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 34
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0812b58eab0f0704f98ded118686d9ed
+      internalID: -2061383327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_60
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 34
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb686729a1db23459f9516d714ebfee
+      internalID: -1743246391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_61
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 34
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa229149d83497a40b228762b793f13c
+      internalID: 1041070540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_62
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 34
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f3751bcee03844db1c5156a8ae51d5
+      internalID: 1574423008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9587afe7a18a0324a97bd0b45cf4e31b
+      internalID: -495396176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_64
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fa0317d3ea9b743b4b5b014ad789b9
+      internalID: -763164523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprteSheetLogo_65
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c16a0cc17a0f74e9f3aa1c6d03c515
+      internalID: -115144650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SprteSheetLogo_0: -1500984776
+      SprteSheetLogo_1: 774580963
+      SprteSheetLogo_10: 1684059751
+      SprteSheetLogo_11: -1539341411
+      SprteSheetLogo_12: 636872348
+      SprteSheetLogo_13: 717025996
+      SprteSheetLogo_14: -50769422
+      SprteSheetLogo_15: -280146611
+      SprteSheetLogo_16: 93867798
+      SprteSheetLogo_17: 232901883
+      SprteSheetLogo_18: -1071906269
+      SprteSheetLogo_19: 1086025525
+      SprteSheetLogo_2: 1615063603
+      SprteSheetLogo_20: -1437551671
+      SprteSheetLogo_21: -1119898083
+      SprteSheetLogo_22: -1574516986
+      SprteSheetLogo_23: -392760489
+      SprteSheetLogo_24: -761378899
+      SprteSheetLogo_25: 1298474056
+      SprteSheetLogo_26: -1317321941
+      SprteSheetLogo_27: 911833511
+      SprteSheetLogo_28: -1249653379
+      SprteSheetLogo_29: 1921949775
+      SprteSheetLogo_3: -1522836510
+      SprteSheetLogo_30: -708386425
+      SprteSheetLogo_31: 1308834582
+      SprteSheetLogo_32: -534273382
+      SprteSheetLogo_33: 1221902919
+      SprteSheetLogo_34: -989430058
+      SprteSheetLogo_35: 1436973952
+      SprteSheetLogo_36: 850517695
+      SprteSheetLogo_37: 1090846072
+      SprteSheetLogo_38: -1529943374
+      SprteSheetLogo_39: -1557042299
+      SprteSheetLogo_4: 402323189
+      SprteSheetLogo_40: -782392175
+      SprteSheetLogo_41: 1884122524
+      SprteSheetLogo_42: 509144302
+      SprteSheetLogo_43: 1099024498
+      SprteSheetLogo_44: 1833797140
+      SprteSheetLogo_45: -1759583180
+      SprteSheetLogo_46: -410067416
+      SprteSheetLogo_47: -1211221260
+      SprteSheetLogo_48: 737577011
+      SprteSheetLogo_49: 464380404
+      SprteSheetLogo_5: -1778335458
+      SprteSheetLogo_50: -1833228460
+      SprteSheetLogo_51: -811005474
+      SprteSheetLogo_52: 392790885
+      SprteSheetLogo_53: -2123150090
+      SprteSheetLogo_54: 747593448
+      SprteSheetLogo_55: -1997492219
+      SprteSheetLogo_56: 570460358
+      SprteSheetLogo_57: 493226093
+      SprteSheetLogo_58: -413819017
+      SprteSheetLogo_59: -2061383327
+      SprteSheetLogo_6: 1338298050
+      SprteSheetLogo_60: -1743246391
+      SprteSheetLogo_61: 1041070540
+      SprteSheetLogo_62: 1574423008
+      SprteSheetLogo_63: -495396176
+      SprteSheetLogo_64: -763164523
+      SprteSheetLogo_65: -115144650
+      SprteSheetLogo_7: -1740549621
+      SprteSheetLogo_8: -1446203984
+      SprteSheetLogo_9: 1110465177
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
