@@ -8,11 +8,12 @@ TagManager:
   - Meta
   - Coleccionable
   - Muros
+  - Jefe
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Bullets
   - Water
   - UI
   - Plataformas
@@ -21,7 +22,7 @@ TagManager:
   - Player
   - Piso
   - Trampas
-  - 
+  - Jefes
   - 
   - 
   - 

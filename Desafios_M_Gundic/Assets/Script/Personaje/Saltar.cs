@@ -12,6 +12,7 @@ public class Saltar : MonoBehaviour
     [SerializeField] private float multiplicadorGravedad;
     private float escalaGravedad;
     private bool botonSaltoArriba = true;
+    public ParticleSystem particulas;
 
     private Jugador jugador;
 
@@ -49,6 +50,8 @@ public class Saltar : MonoBehaviour
         if (Input.GetButton("Jump") && puedoSaltar)
         {
             saltando = true;
+
+            CrearParticulas(0.5f);
 
             if (miAudioSource.isPlaying) { return; }
             miAudioSource.PlayOneShot(jugador.PerfilJugador.JumpSFX);
@@ -103,6 +106,14 @@ public class Saltar : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, rayDistance, groundLayer);
         return hit.collider != null;
+    }
+
+    public void CrearParticulas(float duracion)
+    {
+        var mainModule = particulas.main;
+        particulas.Play();
+        mainModule.startLifetime = duracion;
+        
     }
 
     private void OnDrawGizmos()

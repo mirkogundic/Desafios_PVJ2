@@ -17,16 +17,28 @@ public class Jugador : MonoBehaviour
 
     private AudioSource miAudioSource;
     public GameObject activarEscena;
+    public BarraVida barraDeVida;
+
+
+    private void Awake()
+    {
+
+        activarEscena.gameObject.SetActive(true);
+        miAudioSource = GetComponent<AudioSource>();
+
+    }
+
 
     private void Start()
     {
-        miAudioSource = GetComponent<AudioSource>();
+
         if (perfilJugador.Vida <= 0)
         {
             perfilJugador.ReiniciarPerfil();
         }
+
+        barraDeVida.InicializarBarraVida(perfilJugador.Vida);
         OnTextChange.Invoke(perfilJugador.Vida.ToString());
-        activarEscena.gameObject.SetActive(true);
 
     }
 
@@ -37,6 +49,7 @@ public class Jugador : MonoBehaviour
             miAudioSource.PlayOneShot(perfilJugador.DamageSFX);
         }
         perfilJugador.Vida += puntos;
+        barraDeVida.CambiarVidaActual(perfilJugador.Vida);
         OnTextChange.Invoke(perfilJugador.Vida.ToString());
         Debug.Log(EstasVivo());
             

@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3370561352536987185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3386957238239497690}
+  m_Layer: 0
+  m_Name: BulletExit
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3386957238239497690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3370561352536987185}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.063, y: 0.396, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 110821898984350818}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8557614926622155575
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,6 +43,7 @@ GameObject:
   - component: {fileID: 8278345082000195277}
   - component: {fileID: 1748475771680606957}
   - component: {fileID: 3698981150694798387}
+  - component: {fileID: -1289642428253488286}
   m_Layer: 0
   m_Name: DronBot
   m_TagString: Untagged
@@ -31,7 +63,8 @@ Transform:
   m_LocalPosition: {x: 4.41, y: 0.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3386957238239497690}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8278345082000195277
@@ -148,3 +181,26 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 1.65}
   m_Size: {x: 1.51, y: 3.1}
   m_Direction: 0
+--- !u!114 &-1289642428253488286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8557614926622155575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0f4430f551a5f5498dec0b284287ef9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectarDisparo: {fileID: 0}
+  bulletExit: {fileID: 3386957238239497690}
+  balaEnemigo: {fileID: 7091430410873520706, guid: a10bec20582489d40849abeaaf0919f4, type: 3}
+  distanciaMira: 10
+  capaJugador:
+    serializedVersion: 2
+    m_Bits: 512
+  jugadorDetect: 0
+  intervaloBullet: 2
+  ultimaBullet: 0.3
+  animator: {fileID: 1748475771680606957}

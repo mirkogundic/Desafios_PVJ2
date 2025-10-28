@@ -21,6 +21,7 @@ public class SonidodeCaminar : MonoBehaviour
     {
         if (rayCast.IsGrounded() && movimientoHorizontal.velocidadX != 0)
         {
+            rayCast.CrearParticulas(0.2f);
             miAudio.PlayOneShot(jugador.PerfilJugador.CaminarSFX);
         }
     }
